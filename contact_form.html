@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Contact form </title>
+    </head>
+        <body>
+            <h1 style="text-align: center;"><u>Contact Form</h1>
+            <form>
+            <label for="fName"> First Name (Limit of 30 characters): </label> <br>
+            <input type="text" id="firstName" name="Name" required maxlength="30"> <br>
+        
+            <label for="lName"> Last Name (Limit of 30 characters): </label> <br>
+            <input type="text" id="lastName" name="Name" required maxlength="30"> <br>
+
+            <label for="phone">Contact Phone Number </label><br>
+            <input type="text" id="phone" name="phone" required minlength="10" maxlength="11">
+
+            <p> Phone Number Type: </p>
+            <input type="radio" id="landline" name="Contact No" value="landline">
+            <label for="landline"> Landline </label> <br>
+            
+            <input type="radio" id="mobile" name="Contact No" value="mobile">
+            <label for="mobile"> Mobile </label> <br><br>
+            
+            <label for="email">Contact Email (Limit of 50 characters):</label><br>
+            <input type="text" id="email" name="email" required maxlength="50"><br>
+            <p> How did you hear about us?</p>
+            <label for="hear about us">Select from list:</label><br>
+                <select name="my list">
+                <option value="value1"> Search Engine </option><br>
+                <option value="value2"> Social Media </option><br>
+                <option value="value3"> Recruiter </option> <br>
+                </select>
+            <p>Interest for contacting:</p>
+            
+            <input type="checkbox" id="office" name="office doc" value="MS">
+            <label for="office"> MS Office</label><br>
+            <input type="checkbox" id="OS" name="Oper Sys" value="OS">
+            <label for="OS"> Windows, Linux</label><br>
+            <input type="checkbox" id="programming" name="programming" value="programming">
+            <label for="programming"> HTML, CSS, JS</label><br>
+
+            <p> Message (Limit of 250 characters):</p>
+            <textarea maxlength="250"> Enter text here...</textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+	</body>
+</html>
+
